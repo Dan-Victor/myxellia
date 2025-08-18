@@ -91,7 +91,7 @@ export default function Home() {
        <Image src="/Footer.png" alt="chatbot" width={57} height={57} className="absolute fixed z-999 right-0 mr-[70px] mt-[60px] cursor-pointer hover:transform-[scale-1]" />
       {/*for slideshow div */}
       <div className="flex items-center justify-center gap-[15px] mx-[78px] py-[20px] object-cover">
-        <Image src="/ Metric item.png" alt="Slideshow" width={418} height={286} className="flex-1 object-cover" />
+        <Image src="/Metric item.png" alt="Slideshow" width={418} height={286} className="flex-1 object-cover" />
         <Image src="/Metric item-2.png" alt="Slideshow" width={418} height={286} className="flex-1 object-cover" />
         <Image src="/Metric item-1.png" alt="Slideshow" width={418} height={286} className="flex-1 object-cover" />
       </div>
