@@ -34,7 +34,7 @@ const Nav = () => {
         )}
         </ul>
 
-        <div className=' focus-within:border-blue-500 cursor-text  bg-[#F5F5F5] pl-[18px] border border-gray-300 rounded-[12px] flex justify-center relative items-center flex-1 gap-[8px]'><Image src="/search 1.png" alt='search'  width={24} height={24} className='pointer-events-none'/><input type="text" placeholder="Search listings users here..." className=" h-[43px] pl-[8x] pr-[16px]  flex-1  rounded-[12px]  focus:outline-none " /></div>
+        <div className=' focus-within:border-blue-500 cursor-text  bg-[#F5F5F5] pl-[18px] border border-gray-300 rounded-[12px] flex justify-center relative items-center flex-1 gap-[8px]'><Image src="/Search 1.png" alt='search'  width={24} height={24} className='pointer-events-none'/><input type="text" placeholder="Search listings users here..." className=" h-[43px] pl-[8x] pr-[16px]  flex-1  rounded-[12px]  focus:outline-none " /></div>
       
       </nav>
     </>
