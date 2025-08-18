@@ -10,7 +10,7 @@ const Navbar = () => {
      <nav className="flex w-auto items-center justify-center gap-[25px]">
      <img src="/Notification 1.png" alt="Myxellia Logo" className="" />
      <img src="/calculator.png" alt="calculator png" className="" />
-     <img src="/calendar.png" alt="calender" className="" />
+     <img src="/Calendar.png" alt="calender" className="" />
      <img src="/messagenotif.png" alt="message-notif" className="" />
      <img src="/Profile.png" alt="profile" className="" />
      </nav>

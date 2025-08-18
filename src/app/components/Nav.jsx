@@ -16,11 +16,11 @@ const Nav = () => {
 
     //for the nav items
   const navItems = [
-    { label: "Dashboard", icon: "/home 1.png", alt: "home png", href: "/" },
-    { label: "Listings", icon: "/toolbox.png", alt: "list png", href: "/listings" },
-    { label: "Users", icon: "/profile 1.png", alt: "user png", href: "/users" },
-    { label: "Request", icon: "/article.png", alt: "req png", href: "/request" },
-    { label: "Applications", icon: "/scroll.png", alt: "app png", href: "/application" },
+    { label: "Dashboard", icon: "/Home 1.png", alt: "home png", href: "/" },
+    { label: "Listings", icon: "/Toolbox.png", alt: "list png", href: "/listings" },
+    { label: "Users", icon: "/Profile 1.png", alt: "user png", href: "/users" },
+    { label: "Request", icon: "/Article.png", alt: "req png", href: "/request" },
+    { label: "Applications", icon: "/Scroll.png", alt: "app png", href: "/application" },
   ];
   return (
     <>

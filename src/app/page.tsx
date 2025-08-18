@@ -46,16 +46,16 @@ export default function Home() {
             {/*div for total inflow and mmr */}
             <div className="flex justify-center items-center gap-[16px]">
               {/*div for total inflow*/}
-              <div className="flex flex-col gap-[8px] pl-[15px] pr-[21px] py-[13px]  border border-[1px] border-[#E4E4E4] rounded-[12px]"><h1 className=" text-[#4545FE] text-[19px] font-[900]">₦120,000,000.00</h1> <p className="text-[10px] font-[600] flex  gap-[4px]">Total Inflow <span className="text-[10px] text-[#12B76A] font-[600] flex gap-[4px] "><Image src='/frame.svg' alt="arrow" width={14} height={14} className=""/>2.5%</span></p></div>
+              <div className="flex flex-col gap-[8px] pl-[15px] pr-[21px] py-[13px]  border border-[1px] border-[#E4E4E4] rounded-[12px]"><h1 className=" text-[#4545FE] text-[19px] font-[900]">₦120,000,000.00</h1> <p className="text-[10px] font-[600] flex  gap-[4px]">Total Inflow <span className="text-[10px] text-[#12B76A] font-[600] flex gap-[4px] "><Image src='/Frame.svg' alt="arrow" width={14} height={14} className=""/>2.5%</span></p></div>
               {/*div for mmr */}
-               <div className="flex flex-col gap-[8px] pl-[15px] pr-[21px] py-[13px]  border border-[1px] border-[#E4E4E4] rounded-[12px]"><h1 className=" text-[#12B76A] text-[19px] font-[900]">₦50,000,000.00</h1> <p className="text-[10px] font-[600] flex gap-[4px]">MMR <span className="text-[10px] text-[#12B76A] font-[600] flex gap-[4px]"><Image src='/frame.svg' alt="arrow" width={14} height={14} className=""/>2.5%</span></p></div>
+               <div className="flex flex-col gap-[8px] pl-[15px] pr-[21px] py-[13px]  border border-[1px] border-[#E4E4E4] rounded-[12px]"><h1 className=" text-[#12B76A] text-[19px] font-[900]">₦50,000,000.00</h1> <p className="text-[10px] font-[600] flex gap-[4px]">MMR <span className="text-[10px] text-[#12B76A] font-[600] flex gap-[4px]"><Image src='/Frame.svg' alt="arrow" width={14} height={14} className=""/>2.5%</span></p></div>
             </div>
             {/*div for gmv and cr */}
             <div className="flex justify-center items-center gap-[16px]">
                  {/*div for cr*/}
-               <div className="flex flex-col gap-[8px] pl-[15px] pr-[21px] py-[13px]  border border-[1px] border-[#E4E4E4] rounded-[12px]"><h1 className=" text-[#14B8A6] text-[19px] font-[900]">₦200,000,000.00</h1> <p className="text-[10px] font-[600] flex  gap-[4px] ">Commission Revenue <span className="text-[10px] text-[#14B8A6] font-[600] flex gap-[4px]"><Image src='/frame-2.svg' alt="arrow" width={14} height={14} className=""/>0.5%</span></p></div>
+               <div className="flex flex-col gap-[8px] pl-[15px] pr-[21px] py-[13px]  border border-[1px] border-[#E4E4E4] rounded-[12px]"><h1 className=" text-[#14B8A6] text-[19px] font-[900]">₦200,000,000.00</h1> <p className="text-[10px] font-[600] flex  gap-[4px] ">Commission Revenue <span className="text-[10px] text-[#14B8A6] font-[600] flex gap-[4px]"><Image src='/Frame-2.svg' alt="arrow" width={14} height={14} className=""/>0.5%</span></p></div>
               {/*div for gmv */}
-                 <div className="flex flex-col gap-[8px] pl-[15px] pr-[21px] py-[13px]  border border-[1px] border-[#E4E4E4] rounded-[12px]"><h1 className=" text-[#F04438] text-[19px] font-[900]">₦100,000,000.00</h1> <p className="text-[10px] font-[600] flex  gap-[4px]">GMV <span className="text-[10px] text-[#F04438] font-[600] flex gap-[4px]"><Image src='/frame-1.svg' alt="arrow" width={14} height={14} className=""/>0.5%</span></p></div>
+                 <div className="flex flex-col gap-[8px] pl-[15px] pr-[21px] py-[13px]  border border-[1px] border-[#E4E4E4] rounded-[12px]"><h1 className=" text-[#F04438] text-[19px] font-[900]">₦100,000,000.00</h1> <p className="text-[10px] font-[600] flex  gap-[4px]">GMV <span className="text-[10px] text-[#F04438] font-[600] flex gap-[4px]"><Image src='/Frame-1.svg' alt="arrow" width={14} height={14} className=""/>0.5%</span></p></div>
             </div>
           </div>
         </div>
@@ -88,12 +88,12 @@ export default function Home() {
 </div>
     </div>
       </div>
-       <Image src="/footer.png" alt="chatbot" width={57} height={57} className="absolute fixed z-999 right-0 mr-[70px] mt-[60px] cursor-pointer hover:transform-[scale-1]" />
+       <Image src="/Footer.png" alt="chatbot" width={57} height={57} className="absolute fixed z-999 right-0 mr-[70px] mt-[60px] cursor-pointer hover:transform-[scale-1]" />
       {/*for slideshow div */}
       <div className="flex items-center justify-center gap-[15px] mx-[78px] py-[20px] object-cover">
-        <Image src="/metric item.png" alt="Slideshow" width={418} height={286} className="flex-1 object-cover" />
-        <Image src="/metric item-2.png" alt="Slideshow" width={418} height={286} className="flex-1 object-cover" />
-        <Image src="/metric item-1.png" alt="Slideshow" width={418} height={286} className="flex-1 object-cover" />
+        <Image src="/ Metric item.png" alt="Slideshow" width={418} height={286} className="flex-1 object-cover" />
+        <Image src="/Metric item-2.png" alt="Slideshow" width={418} height={286} className="flex-1 object-cover" />
+        <Image src="/Metric item-1.png" alt="Slideshow" width={418} height={286} className="flex-1 object-cover" />
       </div>
     <h1 className="text-center text-blue-700"><Link href='https://dan-victor.netlify.app ' target="_blank">Made by Dan-Victor</Link></h1>
 </div>
