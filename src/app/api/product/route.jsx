@@ -1,73 +1,11 @@
-'use client';
+import React from 'react'
 
-import Navbar from "./components/Navbar";
-import Nav from "./components/Nav";
-import BarChart  from './components/Barchat';
-import Image from 'next/image';
-import Link from "next/link";
-import  { useState,useEffect } from 'react';
-
-//typescript checker for sales overview
-interface SalesOverviewItem {
-  "total-inflow": string;
-  mmr: string;
-  commission: string;
-  gmv: string;
-}
-
-//for list overview
-interface  listingOverviewItem { 
-        total: string; 
-       active: string;
-       archived: string;
-     }
-    
-
-     //for user overview
-interface  userOverviewItem { 
-         total: string ;
-         riders: string ;
-         subscribers: string;
-     }
-
-interface ApiResponse {
-  sales_overview: SalesOverviewItem[];
-  listing_overview: listingOverviewItem[];
-  user_overview: userOverviewItem[];
-}
-
-
-
-export default function Home() {
-
-  const [datab, setDatab] = useState<ApiResponse | null>(null);
-useEffect(() => {
-  fetch('/api/sales')
-    .then((res) => res.json())
-    .then((data) => setDatab(data))
-    .catch((error) => console.log(error));
-}, []);
-
-console.log(datab);
-
-
+const route = () => {
   return (
-    <div className="font-nuito text-black relative ">
-    
-      {/*{datab?.sales_overview?.map((item, index) => (
-  <div key={index}>
-    <p className="text-black">Total Inflow: {item["total-inflow"]}</p>
-    <p>MMR: {item.mmr}</p>
-    <p>Commission: {item.commission}</p>
-    <p>GMV: {item.gmv}</p>
-  </div>
-))}*/}
-      <Navbar />
-      <Nav />
-      
+    <>
       <div className='px-[78px] pt-[150px]'>
         <h1 className='font-[900] text-[20px] py-[16px]'>Welcome, Ahmed</h1>
-        <div className="flex flex-column items-start justify-center gap-[20px]">
+        <div className="flex items-start justify-center gap-[20px]">
           <div className="px-[22px] pt-[16px] pb-[10px] w-auto h-auto border border-[1px] border-[#E4E4E4] rounded-[8px] ">
             <div className='flex items-start justify-between gap-[48px] '>
               <div>
@@ -168,6 +106,8 @@ console.log(datab);
         <Image src="/Metric item-1.png" alt="Slideshow" width={418} height={286} className="flex-1 object-cover" />
       </div>
       <h1 className="text-center text-blue-700"><Link href='https://dan-victor.netlify.app ' target="_blank">Made by Dan-Victor</Link></h1>
-    </div>
-  );
+    </>
+  )
 }
+
+export default route

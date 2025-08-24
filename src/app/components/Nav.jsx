@@ -5,20 +5,10 @@ import Image from "next/image";
 import Link from 'next/link';
 
 const Nav = () => {
-  const [toggle, setToggle] = useState(false);
-
-  const handleToggle = () => {
-    setToggle(true);
-  };
-
   
-  const log = () => {
-    setToggle(false);
-  };
-
   const pathname = usePathname();
   const navItemClass =
-    "flex items-center justify-center gap-[8px] hover:font-bold cursor-pointer hover:bg-[#F5F5F5] py-[7px] px-[24px] rounded-[8px] ";
+    "flex items-center justify-center gap-[8px] hover:font-bold cursor-pointer  hover:bg-[#F5F5F5] py-[7px] px-[24px] rounded-[8px] ";
   const activeClass = "font-bold  bg-[#F5F5F5]";
 
   const navItems = [
@@ -31,8 +21,9 @@ const Nav = () => {
 
   return (
     <>
-      <nav className="w-full h-auto py-[14px] px-[78px] flex items-center justify-between fixed mt-[80px] bg-[#ffffff] z-999">
-        <ul className="flex items-center justify-center gap-[72px]">
+    
+      <nav className="w-full h-auto py-[10px] xl:px-[78px] md:px-[15px] hidden md:flex items-center justify-between gap-[5px]  xl:gap-[30px] fixed mt-[80px] bg-[#ffffff] z-999">
+        <ul className="flex items-center  justify-between w-full">
           {navItems.map((item) => (
             <li key={item.label}>
               <Link href={item.href} className={`${navItemClass} ${pathname === item.href ? activeClass : ""}`}>
@@ -43,20 +34,11 @@ const Nav = () => {
           ))}
         </ul>
 
-        <div className='focus-within:border-blue-500 cursor-text bg-[#F5F5F5] pl-[18px] border border-gray-300 rounded-[12px] flex justify-center relative items-center flex-1 gap-[8px]'>
+        <div className='focus-within:border-blue-500 cursor-text bg-[#F5F5F5] pl-[18px] pr-[18px] border border-gray-300 rounded-[12px] hidden lg:flex justify-center relative items-center flex-1 gap-[8px]'>
           <Image src="/earch.png" alt='search' width={24} height={24} className='pointer-events-none' />
-          <input type="text" placeholder="Search listings users here..." className="h-[43px] pl-[8px] pr-[16px] flex-1 rounded-[12px] focus:outline-none" />
+          <input type="text" placeholder="Search listings users here..." className="h-[43px] pl-[8px] pr-[16px] flex-1  rounded-[12px] focus:outline-none" />
         </div>
-        <button onClick={handleToggle} className="ml-4 px-4 py-2 rounded bg-gray-200">Toggle</button>
-        {toggle && (
-          <div className='absolute top-[60px] right-[78px] bg-white shadow-lg rounded-lg p-4'>
-            {/* Dropdown content here */}
-            <span>Dropdown Content</span>
-            <h1 className='text-[16px] font-bold'>Hello, User!</h1>
-
-          </div>
-        )}
-        <h2 className="font-bold cursor-pointer" onClick={log} >cancel</h2>
+        <Image src="/earch.png" alt='search' width={24} height={24} className='pointer-events-none block lg:hidden' />
       </nav>
     </>
   );
